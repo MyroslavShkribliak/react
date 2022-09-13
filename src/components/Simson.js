@@ -4,7 +4,7 @@ export default function Simson(props) {
     }= props
     return(
         <div>
-            <h2>Name-{name} Surname-{surname} age-{age}</h2>
+            <h2>Name-{name},Surname-{surname},age-{age}</h2>
             <img src={photo} alt=""/>
             <h2>{info}</h2>
         </div>

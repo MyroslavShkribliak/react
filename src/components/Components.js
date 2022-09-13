@@ -13,8 +13,7 @@ export default function Components() {
             {
                 users.map(item => (
                     <div key={item.id}>
-                        <h2>{item.id}. {item.name} status - {item.status} species - {item.species} gender
-                            - {item.gender}</h2>
+                        <h2>{item.id}. {item.name}, status - {item.status}, species - {item.species}, gender - {item.gender}</h2>
                         <img src={item.image} alt=""/>
                     </div>
 
