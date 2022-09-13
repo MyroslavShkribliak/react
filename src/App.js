@@ -7,7 +7,7 @@ function App() {
     return (
         <div>
             {
-                simpsons.map(value => (<Simson item={value}/>))
+                simpsons.map(value => (<Simson key={value.name} item={value}/>))
             }
             <Components/>
         </div>
