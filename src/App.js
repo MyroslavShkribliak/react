@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import {simpsons} from './components/data'
 import Components from "./components/Components";
