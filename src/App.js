@@ -4,7 +4,7 @@ import SimsonComponents from "./components/SimsonComponents";
 
 function App() {
     return (
-        <div className="it">
+        <div className="wrap">
             <SimsonComponents key={`1`}
                               name={'Homer'}
                               img={'https://static.wikia.nocookie.net/simpsons/images/b/bd/Homer_Simpson.png'}
