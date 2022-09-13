@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
+// import Ccomponents from "./components/Components";
 import SimsonComponents from "./components/SimsonComponents";
+import Components from "./components/Components";
 
 function App() {
     return (
-        <div className="123">
+        <div className="wrap">
             <SimsonComponents key={`1`}
                               name={'Homer'}
                               img={'https://static.wikia.nocookie.net/simpsons/images/b/bd/Homer_Simpson.png'}
@@ -44,8 +46,8 @@ function App() {
                                   'she trips over her clothing and falls on her face. Because she rarely ever talks, Maggie is the least seen and heard in the Simpson family. ' +
                                   'Maggie is the very young, infant age of 1.'}
             />
+            <Components/>
         </div>
-
     );
 }
 
