@@ -58,6 +58,7 @@ export default function Components() {
         .then(value => value.json())
         .then(value => {
             setUsers(value)
+            console.log(value)
         })
     return (
         <div>
