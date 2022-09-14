@@ -1,3 +1,4 @@
+// 1. Описати всю сім'ю сімпсонів (5 персонажів)
 export default function Simson(props) {
     const{
         item:{name,surname,age,info,photo}

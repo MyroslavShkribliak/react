@@ -1,12 +1,15 @@
 import {useState} from "react";
-
+// 2. Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
+// https://rickandmortyapi.com/
+// https://rickandmortyapi.com/api/character
+// Створити 6 персонажів
 export default function Components() {
     let [users, setUsers] = useState([])
     fetch('https://rickandmortyapi.com/api/character/1,2,3,4,5,6')
         .then(value => value.json())
         .then(value => {
             setUsers(value)
-            console.log(value)
+            // console.log(value)
         })
     return (
         <div>
