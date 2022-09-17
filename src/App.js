@@ -1,7 +1,9 @@
+import {User, Users} from "./services";
 const App = () => {
     return (
         <div>
-            App
+            <User/>
+            <Users/>
         </div>
     );
 };
