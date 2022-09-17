@@ -1,10 +1,9 @@
-
-const App = () => {
+const User = () => {
     return (
         <div>
-            App
+            User
         </div>
     );
 };
 
-export {App};
+export {User};
