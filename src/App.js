@@ -1,10 +1,16 @@
+import {simpsons} from './components/data'
+import Components from "./components/Components";
+import Simson from "./components/Simson";
 
-const App = () => {
+function App() {
     return (
         <div>
-            App
+            {
+                simpsons.map(value => (<Simson key={value.name} item={value}/>))
+            }
+            <Components/>
         </div>
     );
-};
+}
 
-export {App};
+export default App;
