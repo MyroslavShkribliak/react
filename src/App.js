@@ -1,10 +1,9 @@
 import {Users} from "./components/Users/Users";
-import {Launches} from "./components/spaceX/Launches";
-
+import {SpaceX1} from "./components/spaceX/SpaceX1";
 const App = () => {
     return (
         <div>
-            <Launches/>
+            <SpaceX1/>
             <Users/>
         </div>
     );

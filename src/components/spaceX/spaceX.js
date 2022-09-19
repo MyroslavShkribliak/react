@@ -1,4 +1,4 @@
-export function Launch(props) {
+export function SpaceX(props) {
     let {launch} = props;
 
     return(

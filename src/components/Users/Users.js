@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {User} from "../User/User";
-import {getUsers} from "../../services/users.api.services";
+import {getUsers} from "../../services/User.api/users.api.services";
 
 
 export function Users() {
@@ -30,11 +30,15 @@ export function Users() {
         <div>
             <hr/>
             {userDetails? <div>
-                <h2>id - {userDetails.id} <br/> name - {userDetails.name}</h2>
-                <p>Username - {userDetails.username} <br/>
-                    Email - {userDetails.email} <br/>
-                    Phone - {userDetails.phone} <br/></p>
-            </div>: <h2>Loading...</h2>
+                <h1>id - {userDetails.id} <br/> name - {userDetails.name}</h1>
+                <h3>Username - {userDetails.username} </h3>
+                <h3>Email - {userDetails.email}</h3>
+                <h3>Phone - {userDetails.phone}</h3>
+                <h3>Address - street {userDetails.address.street}</h3>
+                <h3>Address - suite {userDetails.address.suite}</h3>
+                <h3>Address - city {userDetails.address.city}</h3>
+                <h3>Address - zipcode {userDetails.address.zipcode}</h3>
+            </div>: <h3>Loading...</h3>
             }
             <hr/>
 
