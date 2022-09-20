@@ -35,7 +35,7 @@ const Users = () => {
                 <h3>Address - suite {userDetails.address.suite}</h3>
                 <h3>Address - city {userDetails.address.city}</h3>
                 <h3>Address - zipcode {userDetails.address.zipcode}</h3>
-            </div>: <h3>Loading...</h3>
+            </div>: <h3>Error???</h3>
             }
             <hr/>
             {users.map(value => <User user={value} userDetailsFn={userDetailsFn} key={value.id}/>)}
