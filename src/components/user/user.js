@@ -1,11 +1,11 @@
 const User = (props) => {
-    const {user, userDetailsFn}= props;
+    const {user, userAppDate}= props;
     return (
         <div>
             <h2>id - {user.id}</h2>
             <h2>name - {user.name}</h2>
             <button onClick={() => {
-                userDetailsFn(user)
+                userAppDate(user)
             }}>Click</button>
         </div>
     );

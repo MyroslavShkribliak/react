@@ -14,7 +14,7 @@ const Users = () => {
             });
     }, []);
 
-    let userDetailsFn = (user) => {
+    let userAppDate = (user) => {
         if (user === userDetails) {
             setUserDetails(null);
         } else {
@@ -28,17 +28,17 @@ const Users = () => {
             <hr/>
             {userDetails? <div>
                 <h1>id - {userDetails.id} <br/> name - {userDetails.name}</h1>
-                <h3>Username - {userDetails.username} </h3>
-                <h3>Email - {userDetails.email}</h3>
-                <h3>Phone - {userDetails.phone}</h3>
-                <h3>Address - street {userDetails.address.street}</h3>
-                <h3>Address - suite {userDetails.address.suite}</h3>
-                <h3>Address - city {userDetails.address.city}</h3>
-                <h3>Address - zipcode {userDetails.address.zipcode}</h3>
+                <p>Username - {userDetails.username} </p>
+                <p>Email - {userDetails.email}</p>
+                <p>Phone - {userDetails.phone}</p>
+                <p>Address - street {userDetails.address.street}</p>
+                <p>Address - suite {userDetails.address.suite}</p>
+                <p>Address - city {userDetails.address.city}</p>
+                <p>Address - zipcode {userDetails.address.zipcode}</p>
             </div>: <h3>Error???</h3>
             }
             <hr/>
-            {users.map(value => <User user={value} userDetailsFn={userDetailsFn} key={value.id}/>)}
+            {users.map(value => <User user={value} userAppDate={userAppDate} key={value.id}/>)}
         </div>
     );
 };
