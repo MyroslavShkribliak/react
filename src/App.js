@@ -1,6 +1,6 @@
 import {
     Routes,
-    Route
+    Route, Link
 } from "react-router-dom"
 
 import Home from "./components/home/Home";
@@ -13,6 +13,17 @@ import {CommentDetails} from "./components/commentDetails/commentDetails";
 const App = () => {
     return (
         <div>
+            <h2>
+                <ul>
+                    <Link to={'albums'}>Album</Link>
+                </ul>
+                <ul>
+                    <Link to={'todos'}>Todo</Link>
+                </ul>
+                <ul>
+                    <Link to={'comments'}>Comments</Link>
+                </ul>
+            </h2>
             <Routes>
                 <Route index element={<Home/>}/>
                 <Route path={'albums'} element={<Albums/>}/>

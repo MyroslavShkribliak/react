@@ -1,12 +1,11 @@
 import {Link} from "react-router-dom";
 
 const Comment = ({comment}) => {
-
+    const {id, name, email} = comment
     return (
         <div>
-            {comment.id} -- {comment.email}
-            <hr/>
-            <span><Link to={comment.postId.toString()}>Get post</Link></span>
+
+           <Link to={comment.postId.toString()}>{id} <br/> {name} <br/> {email}</Link>
         </div>
     )
 }
