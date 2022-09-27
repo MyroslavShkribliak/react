@@ -8,4 +8,4 @@ const Album = ({album}) => {
     );
 };
 
-export default Album;
+export {Album};

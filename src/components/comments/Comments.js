@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 
-import {Comment} from "../comment/comment";
-import {userInt} from "../../service/user.service";
+import {Comment} from "../comment/Comment";
+import {userInt} from "../../service";
 
 
 const Comments = () => {

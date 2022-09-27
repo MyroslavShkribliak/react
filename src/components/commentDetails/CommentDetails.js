@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
-import {Comments} from "../comments/comments";
 
+import {Comments} from "../comments/Comments";
 const CommentDetails = () => {
 
     return (

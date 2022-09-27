@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {userService} from "../../service/user.service";
-import Album from "../album/Album";
 
+import {Album} from "../album/Album";
+import {userService} from "../../service";
 const Albums = () => {
     const [album, setAlbum] = useState([]);
     useEffect(() => {
@@ -17,4 +17,4 @@ const Albums = () => {
     );
 };
 
-export default Albums;
+export {Albums};

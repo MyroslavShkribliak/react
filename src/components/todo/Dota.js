@@ -1,4 +1,4 @@
-const todo = ({todo}) => {
+const Todo = ({todo}) => {
     const {id , title} = todo
     return (
         <div>
@@ -7,4 +7,4 @@ const todo = ({todo}) => {
     );
 };
 
-export default todo;
+export {Todo};

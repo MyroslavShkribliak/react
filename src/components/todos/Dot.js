@@ -1,6 +1,8 @@
 import {useEffect, useState} from "react";
-import Todo from "../todo/dota";
-import {userSel} from "../../service/user.service";
+
+
+import {Todo} from "../todo/Dota";
+import {userSel} from "../../service";
 
 const Dot = () => {
 
@@ -17,4 +19,4 @@ const Dot = () => {
     );
 };
 
-export default Dot;
+export {Dot};

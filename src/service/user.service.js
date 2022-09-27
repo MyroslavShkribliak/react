@@ -1,5 +1,5 @@
 
-import {urls} from "../configs/urls";
+import {urls} from "../configs";
 import {axiosService} from "./axios.service";
 
 
