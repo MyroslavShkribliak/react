@@ -1,17 +1,18 @@
 import React, {useEffect, useState} from 'react';
+import {userService} from "../../service/user.service";
+import Album from "../album/Album";
 
 const Albums = () => {
-    const [album, setAlbum] = useState();
+    const [album, setAlbum] = useState([]);
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/albums`)
-            .then(value => value.json())
-            .then(value => {
-                setAlbum(value)
-            })
+        userService.getAll()
+            .then(({data}) => setAlbum(data))
     },[])
     return (
         <div>
-            
+            {
+                album.map((album, index) => (<Album key={index} album={album}/>))
+            }
         </div>
     );
 };
