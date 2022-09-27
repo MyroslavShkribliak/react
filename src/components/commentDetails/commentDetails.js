@@ -1,7 +1,7 @@
 import {Outlet} from "react-router-dom";
 import {Comments} from "../comments/comments";
 
-const CommentsPage = () => {
+const CommentDetails = () => {
 
     return (
         <div>
@@ -10,4 +10,4 @@ const CommentsPage = () => {
         </div>
     )
 }
-export {CommentsPage};
+export {CommentDetails};

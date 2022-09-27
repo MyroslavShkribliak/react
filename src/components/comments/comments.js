@@ -1,14 +1,14 @@
 import {useEffect, useState} from "react";
 
 import {Comment} from "../comment/comment";
-import {postsService as commentService} from "../../service/posts.service";
+import {userInt} from "../../service/user.service";
 
 
 const Comments = () => {
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        commentService.getAll().then(({data}) => setComments(data))
+        userInt.getAll().then(({data}) => setComments(data))
     },[])
 
     return (

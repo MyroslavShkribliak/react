@@ -1,5 +1,5 @@
-const Posts2 = ({posts}) => {
-    const {id , title, body} = posts
+const Posts2 = ({post}) => {
+    const {id , title, body} = post
     return (
         <div>
             <div>{id}</div>
