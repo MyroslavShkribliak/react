@@ -1,9 +1,9 @@
-import {Heder, Posts, Users} from "./components";
+import {Header, Posts, Users} from "./components";
 
 const App = () => {
     return (
         <div>
-            <Heder/>
+            <Header/>
             <div>
                 <Users/>
                 <Posts/>

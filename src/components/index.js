@@ -1,4 +1,4 @@
-export * from './heder/Heder';
+export * from './heder/Header';
 export * from './users/Users';
 export * from './user/User';
 export * from './posts/Posts';

@@ -1,7 +1,22 @@
+import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
+
+import {userActions} from "../../redux";
+import {User} from "../user/User";
+
 const Users = () => {
+    const {users} = useSelector(state => state.userReducer);
+    const dispatch = useDispatch();
+
+    useEffect(()=> {
+        dispatch(userActions.getAll())
+    })
+
     return (
         <div>
-            Users
+            {
+                users.map(user => <User key={user.id} user={user}/>)
+            }
         </div>
     );
 };

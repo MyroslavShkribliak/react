@@ -1,4 +1,6 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+
+import {userService} from "../../services";
 
 const initialState = {
     users: [],
@@ -7,20 +9,33 @@ const initialState = {
     error:null
 };
 
+const getAll = createAsyncThunk(
+    'userSplice/getAll',
+    async (_,{rejectWithValue}) => {
+        try {
+            const {data} = await userService.getALL();
+            return data
+        }catch (e) {
+            return rejectWithValue(e.response.data)
+        }
+    }
+)
+
 const userSplice = createSlice({
     name: 'userSplice',
     initialState,
     reducers: {
-        getAll:(state, action)=>{
-            state.users = action.payload
+        setCurrentUser: (state, action) => {
+            state.currentUser = action.payload
         }
     }
 });
 
-const {reducers:userReducer, action:{getAll}} = userSplice;
+const {reducer: userReducer, actions: {setCurrentUser}} = userSplice;
 
 const userActions = {
-    getAll
+    getAll,
+    setCurrentUser
 };
 
 export {
