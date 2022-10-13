@@ -28,6 +28,11 @@ const userSplice = createSlice({
         setCurrentUser: (state, action) => {
             state.currentUser = action.payload
         }
+    },
+    extraReducers:{
+        [getAll.fulfilled]: (state,action) => {
+            state.users = action.payload
+        }
     }
 });
 
